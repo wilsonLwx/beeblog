@@ -9,6 +9,7 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
+	c.Data["IsIndex"] = true
 	c.TplName = "index.html"
 
 }
